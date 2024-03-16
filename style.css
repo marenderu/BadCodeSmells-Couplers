@@ -142,6 +142,10 @@ i{
     font-size: clamp(3rem, 5vw, 6rem);
 }
 
+.blog-post-subtitle{
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+
 .blog-post-data .article-data{
     margin-bottom: 2.5rem;
 }
@@ -161,6 +165,11 @@ i{
     gap: var(--gap);
 }
 
+.blog-post-images{
+    max-width: 50%;
+    height: auto;
+}
+
 .quote{
     background-color: var(--secondary-background-color);
     padding: 2.5rem;
@@ -172,4 +181,25 @@ i{
 
 .quote span{
     font-size: 5rem;
+}
+
+.author{
+    background-color: var(--secondary-background-color);
+}
+
+.author-image-box{
+    position: relative;
+    height: var(--item-min-height-sm);
+}
+
+.author-about{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.author-name{
+    color: var(--light-color);
+    font-weight: 400;
 }
