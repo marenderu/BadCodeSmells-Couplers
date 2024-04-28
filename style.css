@@ -16,7 +16,7 @@
     --font-family: 'Poppins', sans-serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
-    --font-size-md: 2.4rem;
+    --font-size-md: 1.8rem;
     --font-size-lg: 3rem;
     --font-size-xl: 4rem;
     --gap: 2rem;
@@ -32,6 +32,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+    text-align: justify;
 }
 
 html{
@@ -98,17 +106,27 @@ i{
     left: 0;
     width: 100%;
     z-index: 999;
+    flex-direction: column;
 }
 
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     padding-block: 1.5rem;
 }
 
+/* .inner{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    background-color: blue;
+    flex-direction: column;
+} */
+
 .logo{
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
+    margin-inline: 2rem;
 }
 
 .menu{
@@ -118,14 +136,19 @@ i{
     width: 23rem;
     padding: 1.5rem;
     background-color: var(--secondary-background-color);
-    opacity: 0;
-    transform: scale(0);
+    opacity: 1;
+    transform: scale(1);
     transition: opacity .25s ease-in;
 }
 
 
 
+
 /* blog post */
+.Code-Header{
+    font-size: rem;
+}
+
 .blog-post{
     padding-bottom: 5rem;
 }
@@ -139,11 +162,12 @@ i{
 }
 
 .blog-post-title{
-    font-size: clamp(3rem, 5vw, 6rem);
+    font-size: clamp(3rem, 5vw, 5rem);
+
 }
 
 .blog-post-subtitle{
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 .blog-post-data .article-data{
@@ -166,7 +190,7 @@ i{
 }
 
 .blog-post-images{
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
 }
 
